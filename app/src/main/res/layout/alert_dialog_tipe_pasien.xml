@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/LayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primaryColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Pilih Jenis Pasien"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/primaryColor"
+            android:text="X"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:id="@+id/btnClose"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Apakah anda sudah pernah melakukan\n pendaftaran di Averin sirs?"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPasienLama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txDescription"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/colored_rounded_button"
+        android:text="Sudah Pernah"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhiteColor"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/btnPasienBaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPasienLama"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/colored_rounded_button"
+        android:text="Belum Pernah"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhiteColor"
+        android:textSize="8pt" />
+
+</RelativeLayout>

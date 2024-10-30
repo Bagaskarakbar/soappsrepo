@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/primaryColor"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo_antam_medika" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Registrasi RS Antam Medika"
+                android:textColor="@color/primaryWhiteColor"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/LayoutHeader"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Data Pasien"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginVertical="3dp"
+                    android:background="@color/primaryColor" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TitlePasien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Nama : "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/txNamaPasien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/TitlePasien"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="BAGASKARA AKBAR FADHLILLAH , Tn."
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TitleNoMr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitlePasien"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="No MR : "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/txNoMr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TitlePasien"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/TitleNoMr"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="19000000"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TitleUmur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitleJenisKelamin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Umur : "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/txUmur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TitleJenisKelamin"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/TitleUmur"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="21 Tahun 11 Bulan 25 Hari"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TitleJenisKelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitleNoMr"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Jenis Kelamin : "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/txJenisKelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TitleNoMr"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/TitleJenisKelamin"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Laki - Laki"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TitleAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TitleUmur"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Alamat : "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:id="@+id/txAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TitleUmur"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/TitleAlamat"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="CELEBRATION GARDEN BLOK AC 8 NO 12 GRAND WISATA  "
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="8pt"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginVertical="3dp"
+                    android:background="@color/primaryColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Data Antrian"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="9pt"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginVertical="3dp"
+                    android:background="@color/primaryColor" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/layoutAntri">
+
+                    <TextView
+                        android:id="@+id/TitleNamaDr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Dokter : "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/txNamaDokter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/TitleNamaDr"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Prof. Bambang Budi Siswanto, MD, PhD, FIHA, FASCC"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TitlePoli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txNamaDokter"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Poliklinik : "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/txNamaPoli"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/TitlePoli"
+                        android:layout_below="@+id/txNamaDokter"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Klinik Kebidanan Dan Kandungan"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TitleTanggalDaftar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txNamaPoli"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Jam Antri : "
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="8pt" />
+
+                    <TextView
+                        android:id="@+id/txTanggalDaftar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/TitleTanggalDaftar"
+                        android:layout_below="@+id/txNamaPoli"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="22-10-2019 10:00:00"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutAntri"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/box_outline_antri">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="No Antrian"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="7pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txNoAntri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="17pt"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layoutQR"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/box_outline_antri">
+
+                    <ImageView
+                        android:id="@+id/imgQR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/qr_code_sample" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutQR"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="QR Code Medical Record"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="7pt" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

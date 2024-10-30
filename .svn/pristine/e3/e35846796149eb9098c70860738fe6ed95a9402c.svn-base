@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/LayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primaryColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Pilih Menu"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/primaryColor"
+            android:text="X"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            android:id="@+id/btnClose"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUmum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTitle"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/colored_rounded_button"
+        android:text="Registrasi Umum"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhiteColor"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/btnBPJS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUmum"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/colored_rounded_button"
+        android:text="Registrasi BPJS"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhiteColor"
+        android:textSize="8pt"
+        android:enabled="false"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btnAntrian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBPJS"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/colored_rounded_button"
+        android:text="Lihat Antrian"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryWhiteColor"
+        android:textSize="8pt" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/LayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primaryColor">
+
+        <TextView
+            android:id="@+id/txTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="Input Akun"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/primaryColor"
+            android:text="X"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txGagalLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:text="Data Anda Tidak Ditemukan\n Daftar Pasien Baru??"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtNoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:hint="Masukkan Nomer Telp"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColor"
+        android:textSize="9pt"
+        app:met_baseColor="@color/primaryTextColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txGagalLogin"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/colored_rounded_button"
+            android:text="Cancel"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/colored_rounded_button"
+            android:text="Ok"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

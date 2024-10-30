@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryDarkColor"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Cari No. Telp"
+            android:textColor="@color/primaryWhiteColor"
+            android:textSize="9pt"
+            app:met_primaryColor="@color/primaryWhiteColor"
+            app:met_textColor="@color/primaryWhiteColor"
+            app:met_textColorHint="@color/primaryWhiteColor"
+            app:met_underlineColor="@color/primaryWhiteColor"
+            app:met_baseColor="@color/primaryWhiteColor"
+            android:textColorHint="@color/primaryWhiteColor"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/btnCari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@drawable/colored_small_rounded_white"
+            android:text="CARI"
+            android:textSize="7pt" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvListAntri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:background="@color/backgroundDarkGrey"
+        android:paddingTop="5dp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/LoadingUI"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/circular_progress_bar"
+        android:indeterminateDuration="1000" />
+
+</RelativeLayout>

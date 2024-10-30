@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.averin.SOAP"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+12-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:21:5-65
+12-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:21:22-62
+13    <uses-feature
+13-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:24:5-26:36
+14        android:name="android.hardware.camera"
+14-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:25:9-47
+15        android:required="false" />
+15-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:26:9-33
+16    <uses-feature
+16-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:27:5-29:36
+17        android:name="android.hardware.camera.front"
+17-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:28:9-53
+18        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+18-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:29:9-33
+19    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+20    <uses-feature
+20-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:32:5-34:36
+21        android:name="android.hardware.camera.autofocus"
+21-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:33:9-57
+22        android:required="false" />
+22-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:34:9-33
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:35:5-37:36
+24        android:name="android.hardware.camera.flash"
+24-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:36:9-53
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:37:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:38:5-40:36
+27        android:name="android.hardware.screen.landscape"
+27-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:39:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:40:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:41:5-43:36
+30        android:name="android.hardware.wifi"
+30-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:42:9-45
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:43:9-33
+32
+33    <application
+33-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:7:5-49:19
+34        android:allowBackup="true"
+34-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:8:9-35
+35        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+35-->[com.android.support:support-compat:28.0.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\ccf94a4f227dfa4f17156620e28a8b98\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+36        android:debuggable="true"
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:9:9-43
+38        android:label="@string/app_name"
+38-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:10:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:11:9-54
+40        android:supportsRtl="true"
+40-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:12:9-35
+41        android:theme="@style/AppTheme"
+41-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:13:9-40
+42        android:usesCleartextTraffic="true" >
+42-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:14:9-44
+43        <activity
+43-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:15:9-24:20
+44            android:name="com.averin.SOAP.activities.SplashActivity"
+44-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:16:13-54
+45            android:noHistory="true"
+45-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:17:13-37
+46            android:screenOrientation="portrait" >
+46-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:18:13-49
+47            <intent-filter>
+47-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:19:13-23:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:20:17-69
+48-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:20:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:22:17-77
+50-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:22:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:25:9-27:61
+54            android:name="com.averin.SOAP.activities.ListRSActivity"
+54-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:26:13-54
+55            android:screenOrientation="portrait" />
+55-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:27:13-49
+56        <activity
+56-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:28:9-30:61
+57            android:name="com.averin.SOAP.activities.PilihPoliActivity"
+57-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:29:13-57
+58            android:screenOrientation="portrait" />
+58-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:30:13-49
+59        <activity
+59-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:31:9-33:61
+60            android:name="com.averin.SOAP.activities.ListDokterActivity"
+60-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:32:13-58
+61            android:screenOrientation="portrait" />
+61-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:33:13-49
+62        <activity
+62-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:34:9-36:61
+63            android:name="com.averin.SOAP.activities.PasienBaruActivity"
+63-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:35:13-58
+64            android:screenOrientation="portrait" />
+64-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:36:13-49
+65        <activity
+65-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:37:9-39:61
+66            android:name="com.averin.SOAP.activities.PilihTipeRegistrasiActivity"
+66-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:38:13-67
+67            android:screenOrientation="portrait" />
+67-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:39:13-49
+68        <activity
+68-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:40:9-42:61
+69            android:name="com.averin.SOAP.activities.ListDataAntrianActivity"
+69-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:41:13-63
+70            android:screenOrientation="portrait" />
+70-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:42:13-49
+71        <activity
+71-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:43:9-45:61
+72            android:name="com.averin.SOAP.activities.ListLihatAntrianActivity"
+72-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:44:13-64
+73            android:screenOrientation="portrait" />
+73-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:45:13-49
+74        <activity
+74-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:46:9-48:61
+75            android:name="com.averin.SOAP.activities.AntrianDetActivity"
+75-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:47:13-58
+76            android:screenOrientation="portrait" />
+76-->C:\Users\bagas\Desktop\android projects\SOAP\app\src\main\AndroidManifest.xml:48:13-49
+77        <activity
+77-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
+78            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+78-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
+79            android:clearTaskOnLaunch="true"
+79-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
+80            android:screenOrientation="sensorLandscape"
+80-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
+81            android:stateNotNeeded="true"
+81-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
+82            android:theme="@style/zxing_CaptureTheme"
+82-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
+83            android:windowSoftInputMode="stateAlwaysHidden" />
+83-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\bagas\.gradle\caches\transforms-2\files-2.1\4d0d7dcac4d0df5f8ef275e80387ba80\zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
+84    </application>
+85
+86</manifest>
